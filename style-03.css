@@ -47,7 +47,7 @@ header nav {
   /* Experiment with margin until you find spacing
    * that you like
   */
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 header nav ul {
@@ -152,6 +152,9 @@ main section.hero img {
 
 main section.menu {
   /* Set the padding, background colour and border radius */
+  padding: 1rem;
+  background-color: #f1faeeff;
+  border-radius: 1rem;
 }
 
 main section.menu ul {
@@ -161,11 +164,18 @@ main section.menu ul {
    * the bullet points
    */
   /* You may also have tweak the margin and padding */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 main section.menu ul li {
   /* Set the padding, margin-top and border radius */
   /* Set the background colour */
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  background-color: #e6bcbf;
 }
 
 /* Use psuedo classes nth-child(even)
@@ -175,6 +185,10 @@ main section.menu ul li {
  *
  * background-color: #a8dadcff;
  */
+ main section.menu ul li:nth-child(2n) {
+  background-color: #a8dadcff;
+}
+
 
 
 
@@ -185,6 +199,9 @@ main section.menu ul li {
 main section.testimonials {
   /* Set the padding and background colour #f1faeeff */
   /* Set the border radius */
+  padding: 1rem;
+  background-color: #f1faeeff;
+  border-radius: 1rem;
 }
 
 /*
@@ -195,13 +212,20 @@ main section.testimonials {
   - Center the text
   - Experiment with font-size, font-weight, and color to
     design a sweet heading h2
-
 */
+main section.testimonials h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #ffffff;
+}
 
 main section.testimonials img {
   width: 100%;
   max-width: 100%;
   /* Put a border radius on just the top of the image */
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 /*
@@ -220,8 +244,32 @@ main section.testimonials img {
 
 */
 
+main section.testimonials blockquote {
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 2rem;
+  padding: 2rem 1rem;
+  background-color: #457b9dff;
+  color: #ffffff;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
 /* AND THAT'S IT! YOU ARE DONE. CONGRATULATIONS. POST YOUR LINK! */
 
+footer {
+  margin: 8rem 0;
+  background-color: inherit;
+  color: #fff;
+  padding: 1rem;
+}
+
+footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
 /*
  * DONT MODIFY THE CODE
